@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_pages_services",
+  "info": {
+    "displayName": "services",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Our Services",
+      "required": true,
+      "unique": true
+    },
+    "is_available": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "services_list": {
+      "type": "component",
+      "component": "atoms.card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

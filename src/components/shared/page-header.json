@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_page_headers",
+  "info": {
+    "displayName": "Page Header",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Buttons": {
+      "type": "component",
+      "component": "atoms.button",
+      "repeatable": true
+    }
+  }
+}

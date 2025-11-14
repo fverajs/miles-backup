@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_bento_boxes",
+  "info": {
+    "displayName": "bento_box",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Defaul title",
+      "required": false
+    },
+    "is_available": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "bento_box": {
+      "type": "component",
+      "component": "atoms.image-matrix",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

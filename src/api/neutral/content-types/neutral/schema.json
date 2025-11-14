@@ -1,0 +1,112 @@
+{
+  "kind": "collectionType",
+  "collectionName": "neutrals",
+  "info": {
+    "singularName": "neutral",
+    "pluralName": "neutrals",
+    "displayName": "Neutral"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "neutral_id": {
+      "type": "string",
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "available": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "shortQuote": {
+      "type": "text"
+    },
+    "bio": {
+      "type": "blocks"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "practice_area": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::practice-area.practice-area",
+      "inversedBy": "neutrals"
+    },
+    "admittedToPractice": {
+      "type": "blocks"
+    },
+    "professionalToTradeAffiliations": {
+      "type": "blocks"
+    },
+    "honorsAndAwards": {
+      "type": "blocks"
+    },
+    "ratePerHour": {
+      "type": "decimal"
+    },
+    "ratePerParty": {
+      "type": "decimal"
+    },
+    "mediationPolicy": {
+      "type": "blocks"
+    },
+    "arbitrationField": {
+      "type": "blocks"
+    },
+    "IssuanceofTheFinalArbitrationOrder": {
+      "type": "blocks"
+    },
+    "bookingIsAvailable": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "neutral"
+    },
+    "case_manager": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::case-manager.case-manager"
+    },
+    "office": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::office.office",
+      "inversedBy": "neutrals"
+    },
+    "events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event",
+      "mappedBy": "neutral"
+    }
+  }
+}

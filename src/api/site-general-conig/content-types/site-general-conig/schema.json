@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_general_conigs",
+  "info": {
+    "singularName": "site-general-conig",
+    "pluralName": "site-general-conigs",
+    "displayName": "00. Site - General Config"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

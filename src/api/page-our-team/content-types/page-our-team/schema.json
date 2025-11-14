@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_our_teams",
+  "info": {
+    "singularName": "page-our-team",
+    "pluralName": "page-our-teams",
+    "displayName": "Page - Our team"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "metadata": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "page_header": {
+      "type": "component",
+      "component": "shared.page-header",
+      "repeatable": false
+    }
+  }
+}

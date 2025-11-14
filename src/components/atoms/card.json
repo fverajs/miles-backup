@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_atoms_cards",
+  "info": {
+    "displayName": "card",
+    "icon": "priceTag"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "featured_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "button": {
+      "type": "component",
+      "component": "atoms.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

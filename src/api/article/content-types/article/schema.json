@@ -1,0 +1,108 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Post"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isAvailable": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "title": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "articleImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "Content": {
+      "type": "blocks"
+    },
+    "CreatedDate": {
+      "type": "datetime"
+    },
+    "LastUpdate": {
+      "type": "datetime"
+    },
+    "articles_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::articles-category.articles-category",
+      "inversedBy": "articles"
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "practice_area": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::practice-area.practice-area",
+      "inversedBy": "posts"
+    },
+    "metadata": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "author_type": {
+      "type": "enumeration",
+      "default": "default",
+      "enum": [
+        "default",
+        "neutral",
+        "member"
+      ]
+    },
+    "neutral": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::neutral.neutral",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "author_type"
+            },
+            "neutral"
+          ]
+        }
+      },
+      "inversedBy": "articles"
+    },
+    "member": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::member.member",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "author_type"
+            },
+            "member"
+          ]
+        }
+      },
+      "inversedBy": "posts"
+    }
+  }
+}

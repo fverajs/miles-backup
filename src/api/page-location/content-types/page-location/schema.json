@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_locations",
+  "info": {
+    "singularName": "page-location",
+    "pluralName": "page-locations",
+    "displayName": "Page - Locations"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageHeader": {
+      "type": "component",
+      "component": "shared.page-header",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "required": true
+    },
+    "featured_block": {
+      "type": "component",
+      "component": "pages.featured-content",
+      "repeatable": false
+    }
+  }
+}

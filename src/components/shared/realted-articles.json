@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_shared_realted_articles",
+  "info": {
+    "displayName": "RealtedArticles",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "is_available": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "title": {
+      "type": "string",
+      "default": "Default title",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "practice_area": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::practice-area.practice-area"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::articles-category.articles-category"
+    }
+  },
+  "config": {}
+}

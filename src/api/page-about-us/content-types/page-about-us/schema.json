@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_about_uses",
+  "info": {
+    "singularName": "page-about-us",
+    "pluralName": "page-about-uses",
+    "displayName": "Page - About Us"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "metadata": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "page_header": {
+      "type": "component",
+      "component": "shared.page-header",
+      "repeatable": false
+    },
+    "intro_text": {
+      "type": "blocks"
+    },
+    "services_title": {
+      "type": "string"
+    },
+    "services_section_available": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "services_list": {
+      "type": "component",
+      "component": "atoms.card",
+      "repeatable": true
+    },
+    "mission_section": {
+      "type": "component",
+      "component": "pages.featured-content",
+      "repeatable": false
+    },
+    "disclaimer_section": {
+      "type": "blocks"
+    },
+    "featured_image_content": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    }
+  }
+}

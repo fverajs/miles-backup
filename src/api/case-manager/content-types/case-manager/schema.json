@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_managers",
+  "info": {
+    "singularName": "case-manager",
+    "pluralName": "case-managers",
+    "displayName": "Case Manager"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "available": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "email": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "avtar": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}

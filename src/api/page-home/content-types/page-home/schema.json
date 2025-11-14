@@ -1,0 +1,65 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_homes",
+  "info": {
+    "singularName": "page-home",
+    "pluralName": "page-homes",
+    "displayName": "01. Page - Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Hero": {
+      "type": "component",
+      "component": "pages.hero-banner",
+      "repeatable": false
+    },
+    "Intro_section": {
+      "type": "component",
+      "component": "pages.introduction",
+      "repeatable": false
+    },
+    "services_section": {
+      "type": "component",
+      "component": "pages.services",
+      "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "our_offices_section": {
+      "type": "component",
+      "component": "pages.offices-section",
+      "repeatable": false
+    },
+    "dashboard_section": {
+      "type": "component",
+      "component": "pages.featured-content",
+      "repeatable": false
+    },
+    "our_panel_section": {
+      "type": "component",
+      "component": "pages.featured-content",
+      "repeatable": false
+    },
+    "our_videos_section": {
+      "type": "component",
+      "component": "pages.related-videos",
+      "repeatable": false
+    },
+    "related_articles": {
+      "type": "component",
+      "component": "shared.realted-articles",
+      "repeatable": false
+    },
+    "featured_section": {
+      "type": "component",
+      "component": "sections.bento-box",
+      "repeatable": false
+    }
+  }
+}

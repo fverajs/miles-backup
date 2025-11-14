@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "plage_blog_lists",
+  "info": {
+    "singularName": "plage-blog-list",
+    "pluralName": "plage-blog-lists",
+    "displayName": "Page - Article list"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "metadata": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "page_header": {
+      "type": "component",
+      "component": "shared.page-header",
+      "repeatable": false
+    },
+    "custom_links": {
+      "type": "component",
+      "component": "pages.link-list",
+      "repeatable": true
+    }
+  }
+}

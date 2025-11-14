@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_atoms_buttons",
+  "info": {
+    "displayName": "button",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "variant": {
+      "type": "enumeration",
+      "default": "contained",
+      "enum": [
+        "contained",
+        "outlined",
+        "link"
+      ]
+    },
+    "target_url": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "download",
+        "internal",
+        "external",
+        "search"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "desctructive"
+      ]
+    }
+  },
+  "config": {}
+}

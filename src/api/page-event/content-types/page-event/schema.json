@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_events",
+  "info": {
+    "singularName": "page-event",
+    "pluralName": "page-events",
+    "displayName": "Page - Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "metadata": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "page_header": {
+      "type": "component",
+      "component": "shared.page-header",
+      "repeatable": false
+    }
+  }
+}

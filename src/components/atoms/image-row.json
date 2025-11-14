@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_atoms_image_rows",
+  "info": {
+    "displayName": "image_row",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "image_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image_col": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "target_url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

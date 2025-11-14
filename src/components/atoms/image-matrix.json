@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_atoms_image_matrices",
+  "info": {
+    "displayName": "image_matrix",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "image_col": {
+      "type": "component",
+      "component": "atoms.image-row",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

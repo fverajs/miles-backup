@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_practice_areas",
+  "info": {
+    "singularName": "page-practice-area",
+    "pluralName": "page-practice-areas",
+    "displayName": "Page - Practice Area"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page_header": {
+      "type": "component",
+      "component": "shared.page-header",
+      "repeatable": false
+    },
+    "long_description": {
+      "type": "blocks"
+    },
+    "metadata": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

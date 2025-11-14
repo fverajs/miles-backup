@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_pages_introductions",
+  "info": {
+    "displayName": "introduction",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "main_text": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "button_label": {
+      "type": "string",
+      "default": "Show more"
+    },
+    "button_url": {
+      "type": "string"
+    },
+    "show_button": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "image_gallery": {
+      "type": "component",
+      "component": "atoms.image-row",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_arbitrations",
+  "info": {
+    "singularName": "page-arbitration",
+    "pluralName": "page-arbitrations",
+    "displayName": "Page - Arbitration"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

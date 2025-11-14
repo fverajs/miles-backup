@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_pages_offices_sections",
+  "info": {
+    "displayName": "offices_section",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Our offices",
+      "required": true,
+      "unique": true
+    },
+    "is_available": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "cta_button": {
+      "type": "component",
+      "component": "atoms.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

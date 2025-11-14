@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_atoms_links",
+  "info": {
+    "displayName": "link",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "is_available": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "internal",
+        "external",
+        "download",
+        "search"
+      ]
+    }
+  },
+  "config": {}
+}

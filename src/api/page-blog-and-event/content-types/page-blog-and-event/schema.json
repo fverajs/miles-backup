@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_blog_and_events",
+  "info": {
+    "singularName": "page-blog-and-event",
+    "pluralName": "page-blog-and-events",
+    "displayName": "Page - Blog and Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "metadata": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "page_header": {
+      "type": "component",
+      "component": "shared.page-header",
+      "repeatable": false
+    }
+  }
+}

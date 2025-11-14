@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_pages_related_videos",
+  "info": {
+    "displayName": "related_videos",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Our videos",
+      "required": true,
+      "unique": true
+    },
+    "is_available": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

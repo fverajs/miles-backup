@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_pages_hero_banners",
+  "info": {
+    "displayName": "HeroBanner",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "is_available": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "main_title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "array_text": {
+      "type": "json"
+    },
+    "description": {
+      "type": "text"
+    },
+    "featured_banner": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "buttons": {
+      "type": "component",
+      "component": "atoms.button",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

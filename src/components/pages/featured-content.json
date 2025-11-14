@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_pages_featured_contents",
+  "info": {
+    "displayName": "FeaturedContent",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "featured_media": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "is_available": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "buttons": {
+      "type": "component",
+      "component": "atoms.button",
+      "repeatable": true
+    },
+    "alignment": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "center"
+      ]
+    }
+  },
+  "config": {}
+}

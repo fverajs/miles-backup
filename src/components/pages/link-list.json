@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_pages_link_lists",
+  "info": {
+    "displayName": "link_list",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
