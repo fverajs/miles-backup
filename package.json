@@ -9,7 +9,6 @@
     "deploy": "strapi deploy",
     "dev": "strapi develop",
     "develop": "strapi develop",
-    "prestart": "mkdir -p public/uploads public/.strapi-transfer-backups && chmod -R 777 public || true",
     "start": "node node_modules/@strapi/strapi/bin/strapi.js start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
